@@ -1,0 +1,136 @@
+html{
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    max-width: 960px;
+    width: 90%;
+    margin: auto;
+}
+
+.principal{
+    display: flex;
+    border-bottom: solid black 5px;
+    width: 1200px;
+}
+
+.izquierda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.caja{
+    display: flex;
+}
+
+.imagen{
+    /* float: right; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/img_80x80.png);
+    border: solid black 3px;
+    /* float: left; */
+}
+
+.titulo{
+    align-items: center;
+    margin-left: 10px;
+}
+
+.derecha{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navegacion{
+    display: inline;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.navegacion a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:hover{
+    color: orange;
+}
+
+.seccion{
+    width: 960px;
+    height: 200px;
+    margin: 25px auto;
+    background-image: url(../images/banner1.png);
+    background-repeat: no-repeat;
+    /* background-color: antiquewhite; */
+        /* display: flex;
+        flex-direction: column-reverse; */
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    border-radius: 10px;
+}
+
+.inferior{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.inferior p{
+    color: white;
+    margin-left: 30px;
+}
+
+.seccion-boton{
+    margin: auto 20px;
+}
+
+.boton {
+    width: 130px;
+    height: 30px;
+    display: inline-block;
+    background-color: rgb(77, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    transition: all .2s;
+}
+
+.section-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 3px;
+    width: 221px;
+}
+
+.card__image{
+    width: 200px;
+    height: 100px;
+    margin: 15px 15px 0 15px;
+}
+
+.card__text{
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 22px;
+}
